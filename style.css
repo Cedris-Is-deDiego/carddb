@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*tener el control de las cajas*/
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh; /*va a ocupar toda la pantalla*/
+    display: flex;
+    /*para que todo el contenido este centrado*/
+    justify-content: center;  /*orizontal*/
+    align-items: center;        /*vertical*/
+    font-family: sans-serif;
+    background:  #f5ac59;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    /*para que se oculte lo que este fuera del contenedor card*/
+    overflow: hidden;
+    background: #fbe37d;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    /*la transformacion de cada tarjeta se va
+    a trasladar de manera vertical*/
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 450px;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    color: #3f3f3f;
+}
+
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #b20000;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #072083;
+    border: 1px solid #072083;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover{
+    background: #f85b1a;
+    color: #fff;
+}
